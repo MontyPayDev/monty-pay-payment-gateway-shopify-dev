@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "130140bde0eec932143e4d6927e5a9dd"
+name = "MontyPay Payment Gateway"
+handle = "montypay-payment-gateway"
+application_url = "https://commitments-congratulations-depot-uniprotkb.trycloudflare.com"
+embedded = false
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://commitments-congratulations-depot-uniprotkb.trycloudflare.com/auth/callback",
+  "https://commitments-congratulations-depot-uniprotkb.trycloudflare.com/auth/shopify/callback",
+  "https://commitments-congratulations-depot-uniprotkb.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "monty-pay-dev.myshopify.com"
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true
