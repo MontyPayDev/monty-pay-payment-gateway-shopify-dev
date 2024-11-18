@@ -17,6 +17,7 @@ export const action = async ({ request }) => {
     const paymentSession = await createPaymentSession(
       createParams(requestBody, shopDomain),
     );
+    // this is a test
 
     if (!paymentSession)
       throw new Response("A PaymentSession couldn't be created.", {
