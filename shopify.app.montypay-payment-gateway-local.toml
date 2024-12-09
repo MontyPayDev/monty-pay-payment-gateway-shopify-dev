@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "32ced36a1d2a24893fb4b6ec19595fc8"
+name = "MontyPay Payment Gateway Local"
+handle = "montypay-payment-gateway-local"
+application_url = "https://josh-stockings-exempt-worker.trycloudflare.com"
+embedded = true
+
+[build]
+dev_store_url = "monty-pay-dev.myshopify.com"
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://josh-stockings-exempt-worker.trycloudflare.com/auth/callback",
+  "https://josh-stockings-exempt-worker.trycloudflare.com/auth/shopify/callback",
+  "https://josh-stockings-exempt-worker.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false
