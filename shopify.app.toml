@@ -3,11 +3,11 @@
 client_id = "130140bde0eec932143e4d6927e5a9dd"
 name = "MontyPay Payment Gateway"
 handle = "montypay-payment-gateway"
-application_url = "https://chicago-coal-modem-humans.trycloudflare.com"
+application_url = "https://shopifyapp.montypay.com"
 embedded = true
 
 [build]
-automatically_update_urls_on_dev = true
+automatically_update_urls_on_dev = false
 dev_store_url = "monty-pay-dev.myshopify.com"
 include_config_on_deploy = true
 
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://chicago-coal-modem-humans.trycloudflare.com/auth/callback",
-  "https://chicago-coal-modem-humans.trycloudflare.com/auth/shopify/callback",
-  "https://chicago-coal-modem-humans.trycloudflare.com/api/auth/callback"
+  "https://shopifyapp.montypay.com/auth/callback",
+  "https://shopifyapp.montypay.com/auth/shopify/callback",
+  "https://shopifyapp.montypay.com/api/auth/callback"
 ]
 
 [webhooks]
