@@ -11,8 +11,8 @@ type = "payments_extension"
 merchant_label = "Offsite Payments App Extension"
 payment_session_url = "https://shopifyapp.montypay.com/app/payment_session"
 refund_session_url = "https://shopifyapp.montypay.com/app/refund_session"
-capture_session_url = ""
-void_session_url = ""
+#capture_session_url = ""
+#void_session_url = ""
 supports_oversell_protection = false
 # List of ISO 3166 (alpha-2) country codes your app is available for installation by merchants. Learn more:
 # https://www.iso.org/iso-3166-country-codes.html
