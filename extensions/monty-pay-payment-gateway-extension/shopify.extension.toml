@@ -1,6 +1,6 @@
 # The version of APIs your extension will receive. Learn more:
 # https://shopify.dev/docs/api/usage/versioning
-api_version = "6.5.0"
+api_version = "2024-10"
 
 [[extensions]]
 name = "MontyPay Payment Gateway Extension"
@@ -9,10 +9,10 @@ type = "payments_extension"
 
 
 merchant_label = "Offsite Payments App Extension"
-payment_session_url = "https://checkout.montypay.com/api/v1/session"
-refund_session_url = "https://checkout.montypay.com/api/v1/payment/refund"
-capture_session_url = "https://api.montypay.com/post"
-void_session_url = "https://checkout.montypay.com/api/v1/payment/void"
+payment_session_url = "https://shopifyapp.montypay.com/app/payment_session"
+refund_session_url = "https://shopifyapp.montypay.com/app/refund_session"
+capture_session_url = ""
+void_session_url = ""
 supports_oversell_protection = false
 # List of ISO 3166 (alpha-2) country codes your app is available for installation by merchants. Learn more:
 # https://www.iso.org/iso-3166-country-codes.html
