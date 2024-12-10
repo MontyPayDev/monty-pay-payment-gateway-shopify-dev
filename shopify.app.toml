@@ -4,7 +4,7 @@ client_id = "130140bde0eec932143e4d6927e5a9dd"
 name = "MontyPay Payment Gateway"
 handle = "montypay-payment-gateway"
 application_url = "https://shopifyapp.montypay.com"
-embedded = true
+embedded = false
 
 [build]
 automatically_update_urls_on_dev = false
